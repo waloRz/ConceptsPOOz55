@@ -8,13 +8,39 @@ Console.WriteLine("=======================");
 
 
 
-try
+//try
+//{
+//    Console.WriteLine(new Date(2022, 11, 30));
+//    Console.WriteLine(new Date(2022, 9, 23));
+//    Console.WriteLine(new Date(2024, 11, 29));
+//}
+//catch (Exception error)
+//{
+//    Console.WriteLine(error.Message);
+//}
+
+Employee employee1 = new SalaryEmployee()
 {
-    Console.WriteLine(new Date(2022, 11, 30));
-    Console.WriteLine(new Date(2022, 9, 23));
-    Console.WriteLine(new Date(2024, 11, 29));
-}
-catch (Exception error)
+    Id = 1010,
+    FirstName = "Sandra",
+    LastName = "Morales",
+    BirthDate = new Date(1985, 3, 14),
+    HiringDate = new Date(2022, 2, 10), //    inicio de actividades
+    IsActive = true,        //es Activa
+    Salary = 154648.45M
+};
+Employee employee2 = new CommissionEmployee()
 {
-    Console.WriteLine(error.Message);
-}
+    Id = 1020,
+    FirstName = "Patricia",
+    LastName = "Gutierrez",
+    BirthDate = new Date(1984, 3, 14),
+    HiringDate = new Date(2022, 2, 10), //    inicio de actividades
+    IsActive = true,        //es Activa
+    //Salary = 154648.45M,
+    Sales = 1564651M,
+    CommissionPercentaje = 0.03F
+};
+
+Console.WriteLine(employee1);
+Console.WriteLine(employee2);

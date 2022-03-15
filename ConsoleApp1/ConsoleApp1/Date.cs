@@ -12,7 +12,6 @@ namespace ConsoleApp1
         private int _month; 
         private int _day;
 
-
         public Date(int year, int month, int day)
         {
             _year = year;
@@ -39,26 +38,7 @@ namespace ConsoleApp1
         private bool IsLeapYear(int year)
         {
             return year % 400 == 0 || year % 4 == 0 && year % 100 != 0;
-
-            //if (year % 4 == 0)
-            //{
-            //    if (year % 100 == 0)
-            //    {
-            //        if (year % 400 == 0)
-            //        {
-            //            return true;
-            //        }
-            //        else
-            //        { 
-            //            return false;
-            //        }
-            //    }
-            //}
-            //else 
-            //{ 
-            //    return false;
-            //}
-            
+                   
 
             throw new NotImplementedException();
         }
