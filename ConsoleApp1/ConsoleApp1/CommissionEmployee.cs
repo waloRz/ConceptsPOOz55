@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConsoleApp1
+﻿namespace ConsoleApp1
 {
-    internal class CommissionEmployee : Employee
+    public class CommissionEmployee : Employee
     {
         public float CommissionPercentaje { get; set; }
 
@@ -20,9 +14,9 @@ namespace ConsoleApp1
         public override string ToString()
         {
             return $"{base.ToString()}" +
-                $"\n\t Commission percentaje: {$"{CommissionPercentaje:P2}", 18}" +
-                $"\n\t Sales................: {$"{Sales:c2} ", 18} " +
-                $"\n\t Value to pay ........: {$"{GetValueToPay():C2} ", 18}";
+                $"\n\t Commission percentaje: {$"{CommissionPercentaje:P2}",18}" +
+                $"\n\t Sales................: {$"{Sales:c2} ",18} " +
+                $"\n\t Value to pay ........: {$"{GetValueToPay():C2} ",18}";
         }
     }
 }
